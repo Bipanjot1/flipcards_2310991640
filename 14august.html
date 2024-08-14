@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12 Cards Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .card {
+            width: 150px;
+            height: 200px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            text-align: center;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card-info {
+            display: none;
+            font-size: 14px;
+            margin-top: 20px;
+        }
+        .card.show .card-info {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 12 Cards -->
+    <div class="card" onclick="toggleInfo(this)">
+        <h2>Card 1</h2>
+        <div class="card-info">hello.</div>
+    </div>
+    <div class="card" onclick="toggleInfo(this)">
+        <h2>Card 2</h2>
+        <div class="card-info">my name is Bipanjot.</div>
+    </div>
+    <div class="card" onclick="toggleInfo(this)">
+        <h2>Card 3</h2>
+        <div class="card-info">I am in 2nd year .</div>
+    </div>
+    <div class="card" onclick="toggleInfo(this)">
+        <h2>Card 4</h2>
+        <div class="card-info">FEE lecture is going on.</div>
+    </div>
+    <div class="card" onclick="toggleInfo(this)">
+        <h2>Card 5</h2>
+        <div class="card-info">chitkara university.</div>
+    </div>
+    <div class="card" onclick="toggleInfo(this)">
+        <h2>Card 6</h2>
+        <div class="card-info">CSE .</div>
+    </div>
+    <div class="card" onclick="toggleInfo(this)">
+        <h2>Card 7</h2>
+        <div class="card-info">G18 B.</div>
+    </div>
+    <div class="card" onclick="toggleInfo(this)">
+        <h2>Card 8</h2>
+        <div class="card-info">Lecture 1</div>
+    </div>
+    <div class="card" onclick="toggleInfo(this)">
+        <h2>Card 9</h2>
+        <div class="card-info">wednesday</div>
+    </div>
+    <div class="card" onclick="toggleInfo(this)">
+        <h2>Card 10</h2>
+        <div class="card-info">long weekend ahead</div>
+    </div>
+    <div class="card" onclick="toggleInfo(this)">
+        <h2>Card 11</h2>
+        <div class="card-info">finaly no saturday wokring.</div>
+    </div>
+    <div class="card" onclick="toggleInfo(this)">
+        <h2>Card 12</h2>
+        <div class="card-info">thankyou.</div>
+    </div>
+
+    <script>
+        function toggleInfo(card) {
+            card.classList.toggle("show");
+        }
+    </script>
+</body>
+</html>
